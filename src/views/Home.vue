@@ -12,6 +12,7 @@
         :newSick="`${new_sick}`"
         :newRecovery="`${new_recovery}`"
         :newDeads="`${new_deads}`"
+        :all="true"
       />
     </div>
   </div>

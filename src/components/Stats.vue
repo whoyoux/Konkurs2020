@@ -4,7 +4,7 @@
                 <div id="jh-stats-positive" class="flex flex-col justify-center px-4 py-4 bg-white border border-gray-300 rounded">
                     <div>
                         <p class="text-3xl font-semibold text-center text-yellow-600">{{newSick}}</p>
-                        <p class="text-lg text-center text-gray-500">Nowe zachorowania</p>
+                        <p class="text-lg text-center text-gray-500">{{all ? "Zachorowania" : "Nowe zachorowania"}}</p>
                     </div>
                 </div>
     
@@ -31,7 +31,8 @@ export default {
     props: {
         newSick: String,
         newRecovery: String,
-        newDeads: String
+        newDeads: String,
+        all: Boolean
     }
 }
 </script>
